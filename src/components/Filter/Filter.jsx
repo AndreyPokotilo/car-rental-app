@@ -18,10 +18,10 @@ import {
 
 export function Filter() {
   const [filterValues, setFilterValues] = useState({
-    field1: '',
-    field2: '',
-    field3: '',
-    field4: '',
+    brand: '',
+    price: '',
+    mileageFrom: '',
+    mileageTo: '',
   });
 
   const handleInputChange = e => {
@@ -34,53 +34,52 @@ export function Filter() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // onFilterSubmit(filterValues);
   };
 
   return (
     <FilterContainer>
       <Form onSubmit={handleSubmit}>
         <BrandWrapper>
-          <LabelBrand htmlFor="field1">Car brand</LabelBrand>
+          <LabelBrand htmlFor="brand">Car brand</LabelBrand>
           <InputBrand
             type="text"
-            id="field1"
-            name="field1"
+            id="brand"
+            name="brand"
             placeholder="Enter the text"
-            value={filterValues.field1}
+            value={filterValues.brand}
             onChange={handleInputChange}
           />
         </BrandWrapper>
 
         <PriceWrapper>
-          <LabelPrice htmlFor="field2">Price / 1 hour</LabelPrice>
+          <LabelPrice htmlFor="price">Price / 1 hour</LabelPrice>
           <InputPrice
             type="text"
-            id="field2"
-            name="field2"
+            id="price"
+            name="price"
             placeholder="To $"
-            value={filterValues.field2}
+            value={filterValues.price}
             onChange={handleInputChange}
           />
         </PriceWrapper>
 
         <MileageWrapper>
-          <LabelMileage htmlFor="field3">Сar mileage / km</LabelMileage>
+          <LabelMileage htmlFor="mileage">Сar mileage / km</LabelMileage>
           <MileageInputWrapper>
             <InputMileageFrom
               type="text"
-              id="field3"
-              name="field3"
+              id="mileage"
+              name="mileageFrom"
               placeholder="From"
-              value={filterValues.field3}
+              value={filterValues.mileageFrom}
               onChange={handleInputChange}
             />
             <InputMileageTo
               type="text"
-              id="field3"
-              name="field4"
+              id="mileage"
+              name="mileageTo"
               placeholder="To"
-              value={filterValues.field4}
+              value={filterValues.mileageTo}
               onChange={handleInputChange}
             />
           </MileageInputWrapper>

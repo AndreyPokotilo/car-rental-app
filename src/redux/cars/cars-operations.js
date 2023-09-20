@@ -9,7 +9,6 @@ export const getAllCars = createAsyncThunk(
       
       try {
           const {data} = await axios.get('/autopark');
-          console.log("{data:", data)
           return data;
       } catch (error) {
           return thunkAPI.rejectWithValue(error.message);
@@ -17,29 +16,3 @@ export const getAllCars = createAsyncThunk(
     }
   );
 
-  // export const getCarById = createAsyncThunk(
-  //   'cars/getById',
-  //   async (carId, thunkAPI) => {
-  //     try {
-  //       const { data } = await axios.get(`/autopark/${carId}`);
-  //       return data;
-
-  //     } catch (error) {
-  //       return thunkAPI.rejectWithValue(error.message);
-  //     }
-  //   }
-  // );
-
-//   export const addCar = createAsyncThunk(
-//     'car/addCar',
-//     async (fields, thunkAPI) => {
-//       try {
-//         const { data } = await axios.post('/cars', fields);
-//         console.log("data :", data )
-//         return data;
-        
-//       } catch (error) {
-//         return thunkAPI.rejectWithValue(error.message);
-//       }
-//     }
-//   );

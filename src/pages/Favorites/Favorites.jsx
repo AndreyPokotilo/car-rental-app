@@ -14,7 +14,6 @@ import imgEmpty from '../../images/pngegg.png';
 export function Favorites() {
   const favorites = useSelector(selectedFavorites);
 
-  console.log('favorites:', favorites);
 
   return (
     <FavoritesContainer>

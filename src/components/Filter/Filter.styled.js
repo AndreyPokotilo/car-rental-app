@@ -9,7 +9,6 @@ align-items: center;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 50px;
-/* background-color: #3f8eb1; */
 `;
 
 export const Form = styled.form`
