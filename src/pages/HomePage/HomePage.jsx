@@ -1,89 +1,10 @@
 import { HomeContainer } from './HomePage.styled';
+import { StartContent } from 'components/StartContent/StartContent';
 
 export function HomePage() {
   return (
     <HomeContainer>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
-      <p>Auto</p>
+      <StartContent/>
     </HomeContainer>
   );
 }
