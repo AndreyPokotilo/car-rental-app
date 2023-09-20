@@ -9,7 +9,7 @@ export const Hero = styled.div`
 position: relative;
 width: 100%;
 height: 800px;
-background-color: rgba(18, 20, 23, 0.5);
+background: linear-gradient(to bottom, #4d4d4d, #bdbdbd, #d9d9d9);
 `;
 
 export const TitelBlock = styled.div`
@@ -18,7 +18,6 @@ top: 115px;
 left: 250px;
 width: 800px;
 height: 200px;
-/* background-color: yellow; */
 `;
 
 export const Titel = styled.h1`
@@ -62,7 +61,7 @@ margin-left: 500px;
 `;
 
 export const Footer = styled.div`
-background-color: #323536;
+background-color: #000;
 padding-bottom: 20px;
 `;
 
@@ -87,6 +86,5 @@ export const ImgFooter = styled.img`
 width: 87px;
 &:not(:last-child) {
       margin-right: 4.07px;
-      /* border-right: 1px solid rgba(18, 20, 23, 0.1); */
-    }
+    };
 `;

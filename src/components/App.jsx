@@ -1,11 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+
+import { useDispatch, useSelector } from 'react-redux';
 import { Autopark } from 'pages/Autopark/Autopark';
 import { Favorites } from 'pages/Favorites/Favorites';
 import { HomePage } from 'pages/HomePage/HomePage';
+import { getAllCars } from 'redux/cars/cars-operations';
 import AppBar from './AppBar/AppBar';
 
 export function App() {
-  
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllCars());
+  }, [dispatch]);
 
   return (
     <Routes>

@@ -13,7 +13,7 @@ import {
 } from './StartContent.styled';
 import Bg from '../../images/bg.png';
 import { imgPartner } from 'data/imgPartners';
-
+import { CarCarousel } from 'components/CarCarousel/CarCarousel';
 
 
 
@@ -30,6 +30,7 @@ export function StartContent() {
           </Text>
           <ButtonLink to="catalog">CHOOSE A CAR</ButtonLink>
         </TitelBlock>
+        <CarCarousel/>
       </Hero>
       <Footer>
         <TextFooter>Our partners</TextFooter>
