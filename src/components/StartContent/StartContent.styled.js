@@ -62,6 +62,8 @@ margin-left: 500px;
 
 export const Footer = styled.div`
 background-color: #000;
+height: 115px;
+padding-top: 15px;
 padding-bottom: 20px;
 `;
 
@@ -79,12 +81,14 @@ color: #fff;
 
 export const ImgFooterContainer = styled.div`
 display: flex;
-padding: 0px 5px;
+justify-content: center;
+align-items: center;
+gap: 15px;
 `;
 
 export const ImgFooter = styled.img`
-width: 87px;
-&:not(:last-child) {
+width: 67px;
+/* &:not(:last-child) {
       margin-right: 4.07px;
-    };
+    }; */
 `;
