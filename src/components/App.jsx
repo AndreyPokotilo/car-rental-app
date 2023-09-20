@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Autopark } from 'pages/Autopark/Autopark';
 import { Favorites } from 'pages/Favorites/Favorites';
 import { HomePage } from 'pages/HomePage/HomePage';
