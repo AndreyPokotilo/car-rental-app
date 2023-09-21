@@ -15,9 +15,8 @@ import Bg from '../../images/bg.png';
 import { imgPartner } from 'data/imgPartners';
 import { CarCarousel } from 'components/CarCarousel/CarCarousel';
 
-
-
 export function StartContent() {
+
   return (
     <StartContainer>
       <Hero>

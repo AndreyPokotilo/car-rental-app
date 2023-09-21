@@ -56,7 +56,7 @@ export const Next = styled.div`
 
 export const SlidePanel = styled.div`
   display: flex;
-  width: 690px;
+  width: 750px;
   align-items: center;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -68,6 +68,15 @@ export const SlidePanel = styled.div`
   > div {
     position: relative;
     display: flex;
+    animation: scroll 30s linear infinite;
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-1100%);
+      }
+    }
     > p {
       position: absolute;
       display: flex;
@@ -79,7 +88,7 @@ export const SlidePanel = styled.div`
       top: 5px;
       left: 5px;
       margin: 0px;
-      color:#49fb6e;
+      color: #49fb6e;
       font-size: 25px;
     }
   }
