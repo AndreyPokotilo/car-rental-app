@@ -61,7 +61,7 @@ margin-left: 500px;
 `;
 
 export const Footer = styled.div`
-background-color: #000;
+background-color: #d9d9d9;
 height: 115px;
 padding-top: 15px;
 padding-bottom: 20px;
@@ -88,6 +88,7 @@ gap: 15px;
 
 export const ImgFooter = styled.img`
 width: 67px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 /* &:not(:last-child) {
       margin-right: 4.07px;
     }; */
