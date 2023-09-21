@@ -10,7 +10,6 @@ export function Autopark() {
   const allCars = useSelector(selectedCars);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cars, setCars] = useState([])
-  console.log("cars:", cars)
 
 
   const renderNextItems = () => {
