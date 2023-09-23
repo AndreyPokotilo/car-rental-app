@@ -27,14 +27,12 @@ const carsSlice = createSlice({
     },
 
     deleteFavorites: (state, action) => {
-      console.log('action:', action);
       state.favorites = state.favorites.filter(
         favorit => favorit.id !== action.payload.id
       );
     },
     filtred: (state, action) => {
-      console.log('action:', action);
-
+      // console.log('action:', action);
       state.filter = action.payload;
     },
   },
