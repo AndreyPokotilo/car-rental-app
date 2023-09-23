@@ -16,6 +16,7 @@ display: flex;
 `;
 
 export const BrandWrapper = styled.div`
+position: relative;
 width: 224px;
 height: 100%;
 margin-right: 18px;
@@ -29,8 +30,8 @@ font-weight: 500;
 line-height: 18px;
 `;
 
-export const InputBrand = styled.input`
-width: 204px;
+export const SelectBrand = styled.select`
+width: 224px;
 height: 46px;
 color: #121417;
 font-size: 18px;
@@ -41,7 +42,37 @@ border: none;
 border-radius: 14px;
 background-color: #F7F7FB;
 padding-left: 18px;
+padding-right: 18px;
 margin-top: 8px;
+appearance: none;
+&:focus {
+ border: none;
+}
+`;
+
+export const ArrowUp = styled.img`
+position: absolute;
+top: 43px;
+right: 16px;
+`;
+
+export const ArrowDown = styled.img`
+position: absolute;
+top: 43px;
+right: 16px;
+`;
+
+export const Option = styled.option`
+color: rgba(18, 20, 23, 0.20);
+background-color: #fff;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+&:hover {
+    color: #000;
+    background-color: #fff;
+}
 `;
 
 export const PriceWrapper = styled.div`
@@ -57,8 +88,8 @@ font-weight: 500;
 line-height: 18px;
 `;
 
-export const InputPrice = styled.input`
-width: 106px;
+export const SelectPrice = styled.select`
+width: 126px;
 height: 46px;
 color: #121417;
 font-size: 18px;
